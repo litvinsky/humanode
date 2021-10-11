@@ -6,7 +6,7 @@
 message="!!! ATTENTION !!! You must renew your authentification token in Humanode"
 
 humanode=$(ps aux | grep humanode)
-ngork=$(ps aux | grep ngrok)
+ngrok=$(ps aux | grep ngrok)
 
 #Check if we missed a "consensus" word in log
 alert=$(journalctl -u humanode -S "$(date -d "-10 minutes" +%Y"-"%m"-"%d" "%T)" | grep consensus)

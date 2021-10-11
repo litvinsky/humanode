@@ -50,7 +50,10 @@ type=simple
 User=$USER
 WorkingDirectory=$HOME/.ngrok2
 ExecStart=/usr/bin/ngrok start --all --config="ngrok.yml"
-Restart=on-failure" > /etc/systemd/system/ngrok.service
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/ngrok.service
 
 systemctl daemon reload && \ 
 systemctl enable ngrok && \ 

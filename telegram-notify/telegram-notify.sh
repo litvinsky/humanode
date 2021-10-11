@@ -9,4 +9,5 @@ curl -s --data "text=$1" --data "chat_id=$GROUP_ID" 'https://api.telegram.org/bo
 
 chmod +x /usr/bin/telegram-send && \
 chown root:root /usr/bin/telegram-send
+crontab -l | { cat; echo "*/15 * * * * /$HOME/humanode/humanode-notify.sh >/dev/null 2>&1"; } | crontab -
 telegram-send "Test!"

@@ -55,7 +55,7 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/ngrok.service
 
-systemctl daemon reload && \ 
+systemctl daemon-reload && \ 
 systemctl enable ngrok && \ 
 systemctl start ngrok
 curl localhost:4040/api/tunnels | jq

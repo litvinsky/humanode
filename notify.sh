@@ -29,7 +29,7 @@ then
   telegram-send "!!! Humanode daemon is not running !!!"
 fi
 
-#Check if ngork service is working
+#Check if ngrok service is working
 if [ -z "$ngrok" ]
 then
   telegram-send "!!! Ngrok daemon is not running !!!"

@@ -1,8 +1,7 @@
-<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
 <p><strong>INSTALL AS A DAEMON</strong></p>
 <p><br />Prerequisites:<br />1. You should install humanode as in original manual (<a href="https://testnet.humanode.io/run-your-own-humanode">https://testnet.humanode.io/run-your-own-humanode</a>)<br />2. Humanode files must be in /your_home_directory/humanode<br />3. Ngrok binary file should be located in /usr/bin directory</p>
 <p>To install humanode and ngrok as a daemon you should to edit installer.sh file and add your own variables:<br />NAME= Your node name, for example "SuPerValiDat0r"<br />RPC_URL= Your Ngrok url, you can see it on the ngrok website (<a href="https://dashboard.ngrok.com/endpoints/status">https://dashboard.ngrok.com/endpoints/status</a>)<br />NGROK_TOKEN= Your Ngrok authentification token</p>
-<p>Then make this file executable (run a command chmod +x installer.sh) and run it!</p>
+<p>Then make this file executable (run a command chmod +x installer.sh) and run it <strong>AS ROOT!</strong></p>
 <p>&nbsp;</p>
 <p><strong>TELEGRAM NOTIFICATIONS</strong></p>
 <p><br />Prerequisites: <br />Humanode and Ngrok should run as a services (daemons)</p>

@@ -26,7 +26,7 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/humanode.service
 
-systemctl daemon reload && \
+systemctl daemon-reload && \
 systemctl enable humanode && \
 systemctl start humanode && \
 systemctl restart systemd-journald

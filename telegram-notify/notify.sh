@@ -30,7 +30,7 @@ then
 fi
 
 #Check if ngork service is working
-if [ -z "$ngork" ]
+if [ -z "$ngrok" ]
 then
   telegram-send "!!! Ngrok daemon is not running !!!"
 fi

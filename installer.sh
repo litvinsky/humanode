@@ -33,12 +33,13 @@ systemctl restart systemd-journald
 journalctl -u humanode -n 50 | cat
 
 echo "Setting up Ngrok service..."
+mkdir $HOME/.ngrok2
 printf "authtoken: $NGROK_TOKEN
 tunnels:
     default:
         proto: http
         addr: 9933
-        bind_tls: true" > $HOME/.grok2/ngrok.yml
+        bind_tls: true" > $HOME/.ngrok2/ngrok.yml
 
 printf "[Unit]
 Description=Ngrok

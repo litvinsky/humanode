@@ -72,7 +72,7 @@ Restart=on-failure
 WantedBy=multi-user.target" > /etc/systemd/system/ngrok.service
 
 # Enable & run Ngrok service
-cmode +x /usr/bin/ngrok
+chmod +x /usr/bin/ngrok
 systemctl daemon-reload && \ 
 systemctl enable ngrok && \ 
 systemctl start ngrok

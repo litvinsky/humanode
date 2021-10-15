@@ -9,7 +9,7 @@ SECRET_PHRASE=DEMO_SECRET_PHRASE
 echo "Setting up Humanode service..."
 apt install curl jq -y
 
-#move humanode folder to /root
+# move humanode folder to /root
 cp humanode /root
 
 install -m 0755 "./binaries/$(uname -s)-$(uname -m)/humanode-peer" /usr/local/bin

@@ -62,7 +62,7 @@ Description=Ngrok
 After=network.service
 
 [Service]
-type=simple
+Type=simple
 User=$USER
 WorkingDirectory=$HOME/.ngrok2
 ExecStart=/usr/bin/ngrok start --all --config="ngrok.yml"

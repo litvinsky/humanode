@@ -2,7 +2,6 @@
 
 # REPLACE DEMO VALUES WITH YOUR VALUES
 NAME=DEMO_NODE_NAME
-RPC_URL=DEMO_UNIQUE_RPC_URL
 NGROK_TOKEN=DEMO_NGROK_TOKEN
 
 echo "Setting up Humanode service..."
@@ -10,7 +9,7 @@ apt install curl jq -y
 
 # Make Humanode startup script
 printf "exec 1> >(logger -t humanode) 2>&1
-exec /usr/local/bin/humanode-peer --name "$NAME" --validator --chain chainspec.json --rpc-url "$RPC_URL" --rpc-cors all" > $HOME/humanode/start.sh
+exec /usr/local/bin/humanode-peer --name "$NAME" --validator --chain chainspec.json --rpc-url-ngrok-detect --rpc-cors all" > $HOME/humanode/start.sh
 chmod +x $HOME/humanode/start.sh
 
 # Create Humanode service

@@ -127,11 +127,3 @@ systemctl restart systemd-journal
 
 systemctl status humanode
 journalctl -u humanode -f
-
-# View Ngrok status
-curl localhost:4040/api/tunnels | jq
-
-systemctl status ngrok
-systemctl status humanode
-
-journalctl -u humanode -f

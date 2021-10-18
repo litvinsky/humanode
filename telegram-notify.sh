@@ -17,15 +17,6 @@ curl --socks5-basic \
 -X POST https://api.telegram.org/bot$BOT_TOKEN/sendMessage \
 -d chat_id=$CHAT_ID -d text="$SEND_ME"
 #
-# sending file-message
-cat "$SEND_ME" > /tmp/tg-export && \
-curl --socks5-basic \
--s -X POST https://api.telegram.org/bot$BOT_TOKEN/sendDocument \
--F chat_id=$CHAT_ID -F document=@/tmp/tg-export
-#
-# cleaning
-rm -f /tmp/tg-export > /dev/null > /usr/bin/telegram-send
-#
 chmod +x /usr/bin/telegram-send && \
 chown root:root /usr/bin/telegram-send
 #

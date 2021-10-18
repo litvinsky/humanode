@@ -1,7 +1,7 @@
 <p><strong>INSTALL AS A DAEMON (!!! Tested only on Ubuntu 20.04 !!!)</strong></p>
 <p><br />Prerequisites:<br />1. !!! You should have secret phrase (i.e. mnemonic) !!!<br />2. Humanode files must be in $HOME/humanode</p><p>Ngrok binary now is auto install in /usr/bin</p>
 <p>To install humanode and ngrok as a daemon you should to edit installer.sh file and add your own variables:<br />NAME= Your node name, for example "SuPerValiDat0r"<br />NGROK_TOKEN= Your Ngrok authentification token<br />SECRET_PHRASE= Your humanode secret phrase (i.e. mnemonic)</p>
-<p>Then make this file executable (run a command chmod +x installer.sh) and run it <strong>AS ROOT!</strong></p>
+<p>RUN $ ./installer.sh</strong></p>
 <p>&nbsp;</p>
 <p><strong>TELEGRAM NOTIFICATIONS</strong></p>
 <p><br />Prerequisites: <br />Humanode and Ngrok should run as a services (daemons)</p>
